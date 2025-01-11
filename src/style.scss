@@ -33,8 +33,14 @@ a {
 }
 
 main {
-  min-height: calc(100vh - 190px);
+  flex-grow: 1;
   background: $base-background;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header,
