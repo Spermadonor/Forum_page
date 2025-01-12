@@ -3,8 +3,6 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["master"]
-    paths:
-      - 'src/**'  # Запускать только если изменены файлы в папке dist
 
   workflow_dispatch:  # Ручной запуск через Actions tab
 
