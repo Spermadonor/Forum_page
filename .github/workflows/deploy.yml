@@ -4,7 +4,7 @@ on:
   push:
     branches: ["master"]
     paths:
-      - 'dist/**'  # Запускать только если изменены файлы в папке dist
+      - 'src/**'  # Запускать только если изменены файлы в папке dist
 
   workflow_dispatch:  # Ручной запуск через Actions tab
 
