@@ -1,8 +1,13 @@
 @use 'modern-normalize';
 
 @font-face {
-  font-family: "Liana";
-  src: url("./Liana.ttf");
+  font-family: 'Liana';
+  src: url('fonts/Liana.woff2') format('woff2'),
+      url('fonts/Liana.woff') format('woff'),
+      url('fonts/Liana.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 %container {
