@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "pug": "^3.0.3",
     "sass": "^1.83.1",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "vite-plugin-pug": "^0.4.1"
   },
   "dependencies": {
     "modern-normalize": "^3.0.1"

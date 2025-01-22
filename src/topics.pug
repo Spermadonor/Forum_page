@@ -1,0 +1,45 @@
+extends layout.pug
+
+block content
+  -
+    const messages = [
+      { topic: "(ТЕМА-1/6) Вопросы найма на работу с проживанием", answers: 2, lastMessage: "Как проверить историю предыдущих работ работника", author: "Олег И.", date: "04.01.2025 20:25" },
+      { topic: "(ТЕМА-1/6) Вопросы найма на работу с проживанием", answers: 2, lastMessage: "Как проверить историю предыдущих работ работника", author: "Олег И.", date: "04.01.2025 20:25" },
+      { topic: "(ТЕМА-1/6) Вопросы найма на работу с проживанием", answers: 2, lastMessage: "Как проверить историю предыдущих работ работника", author: "Олег И.", date: "04.01.2025 20:25" }
+    ]
+
+  .info
+    h1 Форум: Вопросы Безопасности в загородном доме.
+    .description
+      p
+        span
+          em
+            span(style="font-size: 14pt;")
+              | Данная лента форума направлена на обсуждения безопасности в загородном
+              | доме -
+              | как зберечь загородное имужество в
+              | отсутствие хозяевов...
+      p - Эксперт
+        strong
+          span
+            | Валерий
+            | Килилов
+  .topics
+    // Заголовки
+    .row.header
+      div Темы
+      div Ответы
+      div Последнее сообщение
+    // Строка с данными
+    each message in messages
+      .row
+        .topic
+          a(href="./messages")= message.topic
+        .answers
+          span= message.answers
+        .last-message
+          a(href="#")= message.lastMessage
+          .message-info
+            span= message.author
+            br
+            span= message.date
