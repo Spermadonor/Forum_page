@@ -13,7 +13,7 @@
 %container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 10px 16px;
 }
 
 $base-background: #2d3238;
@@ -33,6 +33,10 @@ h1 {
   font-size: 24px;
 }
 
+h2 {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
 a {
   display: inline-block;
   color: $base-color;
@@ -57,7 +61,7 @@ main {
 }
 
 header {
-  padding: 10px 0;
+
 }
 
 header,
@@ -141,7 +145,6 @@ nav {
 
 .footer-inner {
   @extend %container;
-  padding: 10px 16px;
 }
 
 // table
@@ -181,6 +184,23 @@ nav {
 }
 .contacts {
   margin: 10px 0;
+}
+
+// page messages
+#forum {
+  margin-bottom: 15px;
+}
+.forum-message {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: $bg-table-second;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.message-count {
+  margin-bottom: 30px;
+}
+.add-message {
+  margin-bottom: 20px;
 }
 /* Мобильная версия */
 @media (max-width: 768px) {
