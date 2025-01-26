@@ -83,6 +83,7 @@ input, textarea {
   appearance: none;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   &:focus {
     outline: 0;
     background: #383c42;
@@ -272,6 +273,12 @@ nav {
 }
 /* Мобильная версия */
 @media (max-width: 768px) {
+  .navigation {
+    padding: 0;
+    a {
+      padding: 10px;
+    }
+  }
   .topics {
     gap: 10px;
   }
