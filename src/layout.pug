@@ -15,9 +15,12 @@
           li
             a(href="#") Контакты
       .account
-        a(href="#") Войти
-        a(href="#") Регистрация
+        a(href="#" class="login-btn") Войти
+        a(href="#" class="register-btn") Регистрация
   main
+    // start modal
+    include modal.pug
+    // end modal
     .content
       block content
   footer

@@ -1,0 +1,35 @@
+.modal.login-modal
+  .modal-content
+    span.close-modal ×
+    h2 Вход
+    form.login-form
+      div(class="form-element")
+        label
+          .input-title Логин:
+          input(type="text" name="username" required)
+      div(class="form-element")
+        label
+          .input-title Пароль:
+          input(type="password" name="password" required)
+      div(class="form-element")
+        button(type="submit") Войти
+
+.modal.register-modal
+  .modal-content
+    span.close-modal ×
+    h2 Регистрация
+    form.register-form
+      div(class="form-element")
+        label
+          .input-title Логин:
+          input(type="text" name="username" required)
+      div(class="form-element")
+        label
+          .input-title Пароль:
+          input(type="password" name="password" required)
+      div(class="form-element")
+        label
+          .input-title Подтвердите пароль:
+          input(type="password" name="password-confirm" required)
+      div(class="form-element")
+        button(type="submit") Зарегистрироваться
